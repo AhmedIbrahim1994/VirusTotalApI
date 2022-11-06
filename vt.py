@@ -1,4 +1,3 @@
-import sys
 import requests
 import json
 import argparse
@@ -76,12 +75,12 @@ def list_detection_engine_detection_name(json_dict):
 
 def main():
     parser.add_argument('--API_KEY', help='API Key')
-    parser.add_argument('--SHA265', help='SHA-265 Hash of the Sample')
+    parser.add_argument('--SHA256', help='SHA-256 Hash of the Sample')
     args = parser.parse_args()
     print("==============\nSummay of the Sample\n==============")
-    print("SHA256:\t\t\t"+args.SHA265)
+    print("SHA256:\t\t\t"+args.SHA256)
     print("Query Virus Total API...")
-    result_json = get_file_report_api(args.SHA265,args.API_KEY)
+    result_json = get_file_report_api(args.SHA256,args.API_KEY)
     json_parsing(result_json)
     
     
