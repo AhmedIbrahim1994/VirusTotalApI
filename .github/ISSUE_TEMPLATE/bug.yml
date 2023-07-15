@@ -1,4 +1,5 @@
 name: Bug Report
+description: Test
 body:
   - type: dropdown
     id: browsers
@@ -8,4 +9,4 @@ body:
       options:
         - Firefox
         - Chrome
-        - Safari
+        - Safari  
