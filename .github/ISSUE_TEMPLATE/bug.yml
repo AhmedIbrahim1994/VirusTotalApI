@@ -1,1 +1,11 @@
 name: Bug Report
+body:
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
